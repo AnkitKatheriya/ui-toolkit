@@ -9,7 +9,7 @@
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix",
     "reset:commit:changes": "git reset HEAD^",
-    "prepare": "husky install"
+    "prepare": "cd .. && husky install scss/.husky"
   },
   "keywords": [],
   "author": "",
@@ -27,11 +27,6 @@
     "stylelint-prettier": "^2.0.0"
   },
   "lint-staged": {
-    "*.scss": "stylelint \"src/**/*.scss\" --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "src/**/*.scss": "stylelint \"src/**/*.scss\" --fix"
   }
 }

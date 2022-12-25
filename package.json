@@ -4,17 +4,21 @@
   "description": "One place for all UI generic components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AnkitKatheriya/ui-toolkit.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ankit Katheriya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnkitKatheriya/ui-toolkit/issues"
   },
-  "homepage": "https://github.com/AnkitKatheriya/ui-toolkit#readme"
+  "homepage": "https://github.com/AnkitKatheriya/ui-toolkit#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }
