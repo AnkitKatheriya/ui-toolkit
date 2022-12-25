@@ -1,0 +1,50 @@
+/*=============================================
+=        Foundation - Typography              =
+=============================================*/
+
+/**
+ * This file defines the default font sizes to be used on headings and texts. The defaults come
+ * from the palette defined in _variables.scss.
+ */
+
+/*=============================================
+=            Body font family                  =
+=============================================*/
+$body-font-family: var(--akds-body-font-family, $playfair) !default;
+
+/*=============================================
+=            Body font sizes                  =
+=============================================*/
+
+$body-font-size: var(--akds-body-font-size, $fs-500) !default;
+$body-font-weight: var(--akds-body-font-weight, $fw-normal) !default;
+
+/*=============================================
+=            Heading font sizes               =
+=============================================*/
+
+$h-1-font-size: var(--akds-h1-font-size, $fs-h1) !default;
+$h-2-font-size: var(--akds-h2-font-size, $fs-h2) !default;
+$h-3-font-size: var(--akds-h3-font-size, $fs-h3) !default;
+$h-4-font-size: var(--akds-h4-font-size, $fs-h4) !default;
+$h-5-font-size: var(--akds-h5-font-size, $fs-h5) !default;
+$h-6-font-size: var(--akds-h6-font-size, $fs-h6) !default;
+
+/*=============================================
+=            Head font weights                =
+=============================================*/
+
+$h-1-font-weight: var(--akds-h1-text-weight, $fw-black) !default;
+$h-2-font-weight: var(--akds-h2-text-weight, $fw-semibold) !default;
+$h-3-font-weight: var(--akds-h3-text-weight, $fw-bold) !default;
+$h-4-font-weight: var(--akds-h4-text-weight, $fw-medium) !default;
+$h-5-font-weight: var(--akds-h5-text-weight, $fw-normal) !default;
+$h-6-font-weight: var(--akds-h6-text-weight, $fw-light) !default;
+
+/*=============================================
+=            Paragraph            =
+=============================================*/
+
+$p-font-size: var(--akds-p-font-size, $fs-400) !default;
+
+/*=====  End of Paragraph  ======*/

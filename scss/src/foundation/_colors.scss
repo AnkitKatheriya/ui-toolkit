@@ -1,0 +1,121 @@
+/*=============================================
+=            Foundation - colors              =
+=============================================*/
+
+/**
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this
+ * with their own variables.
+ */
+
+/*=============================================
+=            Global text colors               =
+=============================================*/
+
+$body-text-color: var(--akds-body-text-color, $dark) !default;
+$body-bg-color: var(--akds-body-bg-color, $white) !default;
+
+/*=====  End of Global text colors  ======*/
+
+/*=============================================
+=                 Buttons                     =
+=============================================*/
+
+$btn-primary-color: var(--akds-btn-primary-color, $white) !default;
+$btn-primary-bg: var(--akds-btn-primary-bg, $green) !default;
+$btn-primary-bg-hover: var(--akds-btn-primary-bg-hover, $green-light) !default;
+
+/*=====  End of Buttons  ======*/
+
+/*=============================================
+=                 Forms                       =
+=============================================*/
+
+$form-border-color: var(--akds-form-border-color, $white-dark) !default;
+$form-bg-color: var(--akds-form-bg-color, $white) !default;
+$form-bg-option-selected: var(--akds-form-bg-option-selected, $green) !default;
+$form-color-option-selected: var(
+  --akds-form-color-option-selected,
+  $white
+) !default;
+$form-bg-color-hover: var(--akds-form-bg-color-hover, $white-dark) !default;
+$form-color: var(--akds-form-color, $dark) !default;
+$form-bg: var(--akds-form-bg, $white) !default;
+$form-error-color: var(--akds-form-error-color, $red) !default;
+$form-error-border: var(--akds-form-error-border, $red) !default;
+$form-border-focus-color: var(--akds-form-border-focus-color, $green) !default;
+
+/*=====  End of Forms  ======*/
+
+/*=============================================
+=            App Bars            =
+=============================================*/
+
+$appbar-bg-color: var(--akds-appbar-bg-color, $white) !default;
+
+/*=====  End of App Bars  ======*/
+
+/*=============================================
+=            Card            =
+=============================================*/
+
+$card-bg-color: var(--akds-card-bg-color, $lotion);
+
+/*=====  End of Card  ======*/
+
+/*=============================================
+=            Banners            =
+=============================================*/
+
+$banners-bg-color: var(--akds-banners-bg-color, $lotion);
+
+/*=====  End of Banners  ======*/
+
+/*=============================================
+=            Menu surface            =
+=============================================*/
+
+$menu-surface-bg-color: var(--akds-menu-surface-bg-color, $lotion);
+
+/*=====  End of Menu surface  ======*/
+
+/*=============================================
+=            Drawers            =
+=============================================*/
+
+$drawers-bg-color: var(--akds-drawers-bg-color, $white);
+
+/*=====  End of Drawers  ======*/
+
+/*=============================================
+=            Bottom sheets            =
+=============================================*/
+
+$bottom-sheets-bg-color: var(--akds-bottom-sheets-bg-color, $lotion);
+
+/*=====  End of Bottom sheets  ======*/
+
+/*=============================================
+=            Snackbar            =
+=============================================*/
+
+$snackbar-bg-color: var(--akds-snackbar-bg-color, $black-raising);
+$snackbar-border-color: var(--akds-snackbar-border-color, $lotion-light);
+
+/*=====  End of Snackbar  ======*/
+
+/*=============================================
+=            Side Sheets            =
+=============================================*/
+
+$side-sheets-bg-color: var(--akds-side-sheets-bg-color, $white);
+
+/*=====  End of Side Sheets  ======*/
+
+/*=============================================
+=            Dialog            =
+=============================================*/
+
+$dialog-bg-color: var(--akds-dialog-bg-color, $white);
+
+/*=====  End of Dialog  ======*/

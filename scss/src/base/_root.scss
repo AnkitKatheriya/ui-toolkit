@@ -1,0 +1,70 @@
+:root {
+  /* Body */
+  --akds-body-font-family: #{$playfair};
+  --akds-body-font-size: #{$fs-500};
+  --akds-body-font-weight: #{$fw-normal};
+  --akds-body-text-color: #{$dark};
+  --akds-body-bg-color: #{$white};
+
+  /* Heading */
+  --akds-h1-font-size: #{$fs-h1};
+  --akds-h2-font-size: #{$fs-h2};
+  --akds-h3-font-size: #{$fs-h3};
+  --akds-h4-font-size: #{$fs-h4};
+  --akds-h5-font-size: #{$fs-h5};
+  --akds-h6-font-size: #{$fs-h6};
+  --akds-h1-text-weight: #{$fw-black};
+  --akds-h2-text-weight: #{$fw-semibold};
+  --akds-h3-text-weight: #{$fw-bold};
+  --akds-h4-text-weight: #{$fw-medium};
+  --akds-h5-text-weight: #{$fw-normal};
+  --akds-h6-text-weight: #{$fw-light};
+
+  /* Paragraph */
+  --akds-p-font-size: #{$fs-400};
+
+  /* Button */
+  --akds-btn-primary-color: #{$white};
+  --akds-btn-primary-bg: #{$green};
+  --akds-btn-primary-bg-hover: #{$green-light};
+
+  /* Form */
+  --akds-form-border-color: #{$white-dark};
+  --akds-form-bg-color: #{$white};
+  --akds-form-bg-option-selected: #{$green};
+  --akds-form-color-option-selected: #{$white};
+  --akds-form-bg-color-hover: #{$white};
+  --akds-form-color: #{$dark};
+  --akds-form-bg: #{$white};
+  --akds-form-error-color: #{$red};
+  --akds-form-error-border: #{$red};
+  --akds-form-border-focus-color: #{$green};
+
+  /* App Bar */
+  --akds-appbar-bg-color: #{$white};
+
+  /* Card */
+  --akds-card-bg-color: #{$lotion};
+
+  /* Banners */
+  --akds-banners-bg-color: #{$lotion};
+
+  /* Menu surface  */
+  --akds-menu-surface-bg-color: #{$lotion};
+
+  /* Drawers */
+  --akds-drawers-bg-color: #{$white};
+
+  /* Bottom sheets  */
+  --akds-bottom-sheets-bg-color: #{$lotion};
+
+  /* Side Sheets  */
+  --akds-side-sheets-bg-color: #{$white};
+
+  /* Snackbar */
+  --akds-snackbar-bg-color: #{$black-raising};
+  --akds-snackbar-border-color: #{$lotion-light};
+
+  /* Dialog */
+  --akds-dialog-bg-color: #{$white};
+}

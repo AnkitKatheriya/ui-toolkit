@@ -1,0 +1,173 @@
+/*=============================================
+=            #Variables            =
+=============================================*/
+
+/**
+ *
+ * TABLE OF CONTENTS
+ *
+ * COLORS
+ * Brand Colors.......................These are the priamry colors.
+ * Neutrals Colors....................These are the secondary colors.
+ * Utility Colors.....................These are the other colors to represents the states: info, warning, success etc.
+ * 
+ * TYPOGRAPHY
+ * Font families......................The font family used in the toolkit system
+ * Font weights.......................Font weights
+ * Sizes..............................Font sizing for body text, paragraphs, inputs
+ * Heading sizes......................Font sizing for page heading
+ * 
+ * BREAKPOINTS
+ * Breakpoints........................Global responsive breakpoints definitions
+ */
+
+/*=============================================
+=                    COLORS                   =
+=============================================*/
+
+/* Brand Colors */
+$green: #5ece7b;
+$green-light: #9ee2b0;
+
+$dark: #1d1f22;
+$dark-light: #737680;
+
+/* Primary */
+
+$clr-primary-500: #6202ee;
+$clr-primary-50: #f2e7fe;
+$clr-primary-100: #d7b7fd;
+$clr-primary-200: #d7b7fd;
+$clr-primary-300: #bb86fc;
+$clr-primary-400: #7f22fd;
+$clr-primary-600: #4b01d1;
+$clr-primary-700: #3700b3;
+$clr-primary-800: #280096;
+$clr-primary-900: #190078;
+
+/* Secondary colors */
+
+$clr-secondary-500: #01a39d;
+$clr-secondary-50: #86ffea;
+$clr-secondary-100: #4ffee4;
+$clr-secondary-200: #18fde1;
+$clr-secondary-300: #03dac6;
+$clr-secondary-400: #02beb2;
+$clr-secondary-600: #018786;
+$clr-secondary-700: #00696b;
+$clr-secondary-800: #004b4f;
+$clr-secondary-900: #002f33;
+
+/* Neutral Colors */
+$gray: #a3a5ad;
+$gray-light: #bebfc4;
+
+$white: #fff;
+$white-dark: #f1f2f3;
+
+$lotion: #fafafa;
+$lotion-light: #ccc;
+
+$black-raising: #202020;
+
+/* Utility Colors */
+$red: #d12727;
+$red-light: #f8dedf;
+
+$blue: #0468db;
+$blue-light: #b4d2f4;
+
+/*=====  End of COLORS  ======*/
+
+/*=============================================
+=            Typography            =
+=============================================*/
+
+/**
+ *
+ * 1) The playfair font. We'll use this for headings mostly.
+ *     https://fonts.google.com/specimen/Playfair+Display
+ *
+ * 2) The raleway font. We'll use this for the body text.
+ *     https://fonts.google.com/specimen/Raleway
+ */
+
+/* Font families */
+
+$playfair: "Playfair Display", serif; /* 1 */
+$raleway: "Raleway", "HelveticaNeue", "Helvetica", sans-serif; /* 2 */
+
+/* Font sizes */
+$fs-100: 0.5rem; //8px
+$fs-200: 0.625rem; //10px
+$fs-300: 0.75rem; //12px
+$fs-400: 0.875rem; //14px
+$fs-500: 1rem; //16px
+$fs-600: 1.125rem; //18px
+$fs-700: 1.25rem; //20px
+$fs-800: 1.375; //22px
+$fs-900: 1.5rem; //24px
+
+/* Heading font sizes */
+$fs-h1: 6rem; // 96px
+$fs-h2: 3.75rem; // 60px
+$fs-h3: 3rem; // 48px
+$fs-h4: 2.215rem; // 34px
+$fs-h5: 1.5rem; // 24px
+$fs-h6: 1.25rem; // 20px
+
+/* Font weights */
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+/*=====  End of Typography  ======*/
+
+/*=============================================
+=            Breakpoints            =
+=============================================*/
+
+$breakpoints: (
+  md: 48rem,
+
+  lg: 64rem,
+
+  xl: 96rem,
+) !default;
+
+$spacing: (
+  none: 0,
+
+  xxxs: 0.25rem,
+
+  xxs: 0.5rem,
+
+  xs: 0.75rem,
+
+  sm: 1rem,
+
+  md: 1.25rem,
+
+  lg: 1.5rem,
+
+  xlg: 2rem,
+
+  xxlg: 4rem,
+
+  xxxlg: 6rem,
+) !default;
+/*=====  End of Spacing  ======*/
+
+$shadows: (
+  base: 0 4px 11px rgba(157, 157, 157, 0.21),
+);
+
+/*=====  End of #Variables  ======*/
+
+body {
+  
+}
