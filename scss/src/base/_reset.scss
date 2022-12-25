@@ -4,5 +4,17 @@
  * http://necolas.github.io/normalize.css/
  * 
  */
+//@use "sass:math";
+//@import "node_modules/normalize-scss/sass/normalize/import-now";
 
-@import "node_modules/normalize-scss/sass/normalize/import-now";
+
+/**
+ *
+ * Adding modern-normalize.css in place of normalize-scss as this package is no longer maintainable
+ * And also I was getting error during integration with gulp
+ *
+ */
+ //@import 'node_modules/modern-normalize/modern-normalize.css'
+ //@import url('node_modules/normalize.css/normalize.css');
+ //@import "npm:normalize.css/normalize.css"
+

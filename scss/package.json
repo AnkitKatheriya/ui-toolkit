@@ -8,19 +8,30 @@
     "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix",
+    "compile:scss:build": "gulp -f ./gulpfile.js build",
+    "compile:scss:watch": "gulp -f ./gulpfile.js watch",
     "reset:commit:changes": "git reset HEAD^",
+    "delete:style": "rm -rf publish/",
     "prepare": "cd .. && husky install scss/.husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "gulp-sass": "^5.1.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-merge": "^0.1.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
+    "normalize.css": "^8.0.1",
     "prettier": "^2.8.1",
+    "sass": "^1.57.1",
     "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-sass-guidelines": "^9.0.1",

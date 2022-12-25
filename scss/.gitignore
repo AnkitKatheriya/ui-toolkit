@@ -1,1 +1,4 @@
 node_modules/
+.git/
+.gulp-scss-cache/
+publish/*
