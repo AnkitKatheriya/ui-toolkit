@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run compile:scss:build",
     "lint:scss": "stylelint \"src/**/*.scss\"",
     "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
     "lint:js": "eslint . --ext .js,.jsx",
@@ -12,7 +13,7 @@
     "compile:scss:watch": "gulp -f ./gulpfile.js watch",
     "reset:commit:changes": "git reset HEAD^",
     "delete:style": "rm -rf publish/",
-    "prepare": "cd .. && husky install scss/.husky"
+    "precommit": "echo 'scss package'"
   },
   "keywords": [],
   "author": "",
@@ -27,8 +28,6 @@
     "gulp-merge": "^0.1.1",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
     "normalize.css": "^8.0.1",
     "prettier": "^2.8.1",
     "sass": "^1.57.1",

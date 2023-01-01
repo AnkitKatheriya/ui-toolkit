@@ -17,7 +17,10 @@ var path = {
   normalize: 'node_modules/modern-normalize/modern-normalize.css',
   dir: './publish/css/',
   scss: './src/**/*.scss',
-  css: './publish/css/global.css'
+  atomsDir: './src/atoms',
+  moleculesDir: './src/molecules',
+  organismsDir: './src/organisms',
+  globalCss: './publish/css/global.css'
 };
 
 var externsion = {
@@ -32,8 +35,33 @@ task('scss', function() {
       .pipe(dest(path.dir));
 });
 
+task('atoms', function() {
+  return src(`${path.atomsDir}/*.scss`)
+    .pipe(sass({
+      includePaths: [path.normalize]
+    }).on('error', sass.logError))
+    .pipe(dest(path.dir));
+});
+
+task('molecules', function() {
+  return src(`${path.moleculesDir}/*.scss`)
+    .pipe(sass({
+      includePaths: [path.normalize]
+    }).on('error', sass.logError))
+    .pipe(dest(path.dir));
+});
+
+task('organisms', function() {
+  return src(`${path.organismsDir}/*.scss`)
+    .pipe(sass({
+      includePaths: [path.normalize]
+    }).on('error', sass.logError))
+    .pipe(dest(path.dir));
+});
+
+
 task('minify-css', function() {
-  return src(path.css)
+  return src(path.globalCss)
     .pipe(cleanCss())
     .pipe(rename({suffix: externsion.minify}))
     .pipe(dest(path.dir));
@@ -46,7 +74,7 @@ task('minify-css', function() {
 //     }).on('error', function(error){
 //       console.error('Error', error.message)
 //     }))
-//     .pipe(dest(path.css))
+//     .pipe(dest(path.globalCss))
 // });
 
 // task('image', function(){
@@ -65,9 +93,9 @@ task('minify-css', function() {
 // });
 
 // gulp.task('minify-css', function() {
-//   gulp.src(path.css)
+//   gulp.src(path.globalCss)
 //     .pipe(minifyCSS({keepBreaks:false}))
-//     .pipe(gulp.dest(path.css));
+//     .pipe(gulp.dest(path.globalCss));
 // });
 
 
@@ -89,27 +117,27 @@ task('minify-css', function() {
 // });
 
 // task('css', function() {
-//   return src([path.normalize, `${path.css}/global.css`], { allowEmpty: true, sourcemaps: true })
+//   return src([path.normalize, `${path.globalCss}/global.css`], { allowEmpty: true, sourcemaps: true })
 //   .pipe(concat('global.css'))
 //   .pipe(sourcemap.init())
 //   .pipe(cleanCss())
 //   .pipe(sourcemap.write())
-//   .pipe(dest(path.css), { sourcemaps: true })
+//   .pipe(dest(path.globalCss), { sourcemaps: true })
 // })
 
 // task('styles', function() {
 //   return merge(
 //     src(path.normalize),
-//     `${path.css}/global.css`
+//     `${path.globalCss}/global.css`
 //   ).pipe(concat('global.css'))
 //   .pipe(sourcemap.init())
 //   .pipe(minifyCss())
 //   .pipe(sourcemap.write())
-//   .pipe(dest(path.css))
+//   .pipe(dest(path.globalCss))
 // })
 
 task('watch', function() {
   watch(path.scss, series(['scss', 'minify-css']));
 });
 
-task('build', series(['scss', 'minify-css']))
+task('build', series(['scss', 'atoms', 'molecules', 'organisms', 'minify-css']))

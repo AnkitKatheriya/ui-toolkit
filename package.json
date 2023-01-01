@@ -4,7 +4,10 @@
   "description": "One place for all UI generic components",
   "main": "index.js",
   "scripts": {
+    "build": "lerna run build",
     "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
+    "remove:node-modules": "rm -rf ./node_modules && rm -rf ./**/node_modules",
+    "commitizen:package:add": "./node_modules/commitizen/bin/commitizen init cz-conventional-changelog --npm --dev --exact",
     "prepare": "husky install"
   },
   "repository": {
@@ -19,6 +22,24 @@
   },
   "homepage": "https://github.com/AnkitKatheriya/ui-toolkit#readme",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lerna": "^6.1.0",
+    "lint-staged": "^13.1.0"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/normalize.css"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
