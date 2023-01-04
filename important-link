@@ -4,6 +4,8 @@ Gulp for scss
 //https://www.codepedia.org/ama/how-to-use-gulp-to-generate-css-from-sass-scss/
 //https://stackoverflow.com/questions/30002085/gulp-concat-scss-with-css#:~:text=%40mrdotb%2C%20if%20you%20want%20to%20do%20it%20with,this%20on%20your%20main%20scss%20file%3A%20%40import%20%22normalize%22%3B
 //https://www.goede.site/setting-up-gulp-4-for-automatic-sass-compilation-and-css-injection
+//https://www.goede.site/setting-up-gulp-4-for-automatic-sass-compilation-and-css-injection
+//https://css-tricks.com/gulp-for-beginners/
 
 
 Resolving error statements
@@ -17,3 +19,5 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
    ╷
 16 │     @return ($value / $relative-to) * 1em*/
 //https://github.com/luckyframework/lucky_cli/issues/640
+
+//https://codeburst.io/continuous-integration-lint-staged-husky-pre-commit-hook-test-setup-47f8172924fc

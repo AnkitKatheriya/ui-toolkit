@@ -13,8 +13,12 @@
     "compile:scss:watch": "gulp -f ./gulpfile.js watch",
     "reset:commit:changes": "git reset HEAD^",
     "delete:style": "rm -rf publish/",
-    "precommit": "echo 'scss package'"
+    "precommit": "echo 'scss package' && npm run lint:scss:fix"
   },
+  "files": [
+    "publish",
+    "src"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

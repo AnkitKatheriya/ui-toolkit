@@ -1,4 +1,9 @@
 node_modules/
-lib/*
 .git/
 .gulp-scss-cache/
+dist/
+
+.parcel-cache
+
+**/**/node_modules/
+.cache/
