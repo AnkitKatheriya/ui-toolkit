@@ -13,7 +13,8 @@
     "compile:scss:watch": "gulp -f ./gulpfile.js watch",
     "reset:commit:changes": "git reset HEAD^",
     "delete:style": "rm -rf publish/",
-    "precommit": "echo 'scss package' && npm run lint:scss:fix"
+    "precommit": "echo 'scss package' && npm run lint:scss:fix",
+    "dev": "nodemon --watch src --exec npm run build -e scss"
   },
   "files": [
     "publish",
@@ -32,6 +33,7 @@
     "gulp-merge": "^0.1.1",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "nodemon": "^2.0.20",
     "normalize.css": "^8.0.1",
     "prettier": "^2.8.1",
     "sass": "^1.57.1",

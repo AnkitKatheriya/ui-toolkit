@@ -8,7 +8,8 @@
     "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix",
     "remove:node-modules": "rm -rf ./node_modules && rm -rf ./**/node_modules",
     "commitizen:package:add": "./node_modules/commitizen/bin/commitizen init cz-conventional-changelog --npm --dev --exact",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "lerna run dev"
   },
   "repository": {
     "type": "git",

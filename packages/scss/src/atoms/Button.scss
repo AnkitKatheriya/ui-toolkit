@@ -1,10 +1,9 @@
 @import "../foundation/all";
 
 .ui-toolkit-button-container {
-  display: flex;
-
   background: $btn-primary-bg;
-  color: $btn-primary-color;
   border: 0;
+  color: $btn-primary-color;
+  display: flex;
   padding: map-get($spacing, "xxxs");
 }
