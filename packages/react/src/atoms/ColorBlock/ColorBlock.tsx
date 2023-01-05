@@ -1,13 +1,13 @@
 import React from 'react'
-import Spacings from '../../foundation/Spacings'
+import { Spacing } from '@ui.toolkit/foundation'
 
 interface ColorBlockProps {
     hexColor: string,
-    width?: keyof typeof Spacings,
-    height?: keyof typeof Spacings
+    width?: keyof typeof Spacing,
+    height?: keyof typeof Spacing
 }
 
-const ColorBlock: React.FC<ColorBlockProps> = ({ hexColor, width = Spacings.md, height = Spacings.md }) => {
+const ColorBlock: React.FC<ColorBlockProps> = ({ hexColor, width = Spacing.md, height = Spacing.md }) => {
     
     const className = `ui-toolkit-width-${width} ui-toolkit-height-${height}`
     return (

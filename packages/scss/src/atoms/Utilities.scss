@@ -1,11 +1,11 @@
-@import '../foundation/all';
+@import "../foundation/all";
 
 @each $size, $value in $spacing {
-    .ui-toolkit-width-#{$size} {
-        width: $value;
-    }
+  .ui-toolkit-width-#{$size} {
+    width: $value;
+  }
 
-    .ui-toolkit-height-#{$size} {
-        height: $value;
-    }
+  .ui-toolkit-height-#{$size} {
+    height: $value;
+  }
 }
